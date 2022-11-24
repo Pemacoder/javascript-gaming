@@ -1,0 +1,204 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Itim',cursive;
+}
+.background{
+    background-color:#121818;       /* styling background of the game page */
+    height:110vh;
+    padding-top:1px;
+}
+.title{
+    color:white;
+    text-align: center;     /* Styling of the game title */
+    font-size: 40px;
+    margin-top:8%;
+}
+
+#tie-round{
+    color:white;
+    text-align: center;    /* styling message show for tie */
+}
+
+.display{
+    color:white;
+    font-size:25px;
+    text-align:center;          /* styling section which will display player's turn */
+    margin-top:1em;
+    margin-bottom:1em;
+}
+.final-winner{
+    background-color: #5f746b;
+    color:#a91d1d;
+    display:none;
+    height:50vh;
+    position:absolute;          /* styling section which displays final winner */
+    top:30%;
+    left:37%;
+    width:25%;
+    z-index:1;
+    text-align: center;
+    background-image:url(win.jpg);
+    background-size:cover;
+    background-position:5px 0px;
+}
+.score{
+    position:absolute;
+    top:25px;
+    right:25px;             /* styling sections containing scores and round  displayer*/
+    color:#09c372;
+}
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;                   /* styling more button and buttons inside it*/
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .score .btn{
+    margin-top:25px;        /* positioning more button */
+    margin-left:25px;
+}
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;  
+  }
+
+
+/* .hide{
+    display:none;
+} */
+.container{
+    margin:0 auto; 
+    display:grid;
+    grid-template-columns:33% 33% 33%;      /* styling the container where the game boxes are */
+    grid-template-rows:33% 33% 33%;         /* used grid system to arrange the boxes */
+    max-width:300px;
+    position:relative;
+  
+} 
+
+.playerX{
+    color:#09c372;      /* style the player name's color when it's their turn */
+} 
+.playerO{
+    color:#498AFB;
+}
+.tile{
+    border:1px solid rgb(138, 27, 27);
+    min-width:100px;
+    min-height:100px;
+    display:flex;
+    justify-content:center;         /* styling each box of the game area */
+    align-items:center;
+    font-size:50px;
+    cursor:pointer;
+    color:red;
+}
+.strike{
+    position:absolute;
+    background-color:#FF0000;   /* to make a line through the user's name when the round is won  */
+    display:none;
+}
+.strike-row1 {
+    width:100%;
+    height:4px; /* will make line for row 1 */
+    top:16.5%;
+}
+.strike-row2 {
+    width:100%;
+    height:4px;     /* will make line for row 2 */
+    top:50%;
+}
+.strike-row3{
+    width:100%;
+    height:4px;     /* will make line for row 3 */
+    top:83%;
+}
+.strike-col1{
+    height:100%;
+    width:4px;      /* will make line for column 1 */
+    left:17%;
+}
+.strike-col2{
+    height:100%;        /* will make line for column 2 */
+    width:4px;
+    left:50%;
+}
+.strike-col3{
+    height:100%;
+    width:4px;          /* will make line for column 3 */
+    left:83%;
+}
+.strike-diagonal1{
+    width:143%;
+    height:2px;         /* will make a line diagonally from top left to bottom right */
+    top:50%;
+    left:-20%;
+    transform:rotate(45deg);
+}
+.strike-diagonal2{
+    width:140%;
+    height:2px;
+    top:50%;            /* will make a line diagonally from top right to bottom left */
+    left:-20%;
+    transform:rotate(-45deg);
+}
+
+.more{
+    background-color:#21a985;
+    display:none;
+    position:absolute;
+    top:50%;                    /* styling buttons shown when more button is clicked */
+    left:37%;
+    width:25%;
+    z-index: 2;
+
+}
+.more h2{
+    text-align:center;
+}
+.more .btn{
+    position:relative;
+    left:10%;                   /* setting postions of buttons */
+    margin:15px 25px;
+}
+.volume-mute{
+    display:none;       /* hiding volume mute button to show volume up button only. This button will be shown when clicked on volume up button */
+}
+
+.controls{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;     /* aligning restart, next round and play again button */
+    align-items:center;
+    margin-top:1em;
+}
+#reset,#next-round,#play-again{
+    background-color:#FF3860;
+    color:white;
+    padding:8px;
+    border-radius:8px;              /* styling for the restart button, next round button and play again button */
+    border:none;
+    font-size:20px;
+    margin-left:1em;
+    margin-top:23px;
+    cursor:pointer;
+    opacity:0.7;
+}
+#next-round,#play-again{
+    display:none;               /* hiding next round and play again button which will shown using javascript */
+}
+#reset:hover,#next-round:hover,#play-again:hover{
+    opacity:1;                          /* hover effects for the buttons */
+    background-color:#FF0000;
+}
+/* setting color for each player's name */
+.playerO{
+    color:#498AFB;
+}
+.playerX{
+    color:#09c372;  
+}
+

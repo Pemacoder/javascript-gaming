@@ -1,0 +1,49 @@
+<!-- Home page  -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tae Toe-Home</title>
+    <link rel="stylesheet" href="index.css">
+ 
+</head>
+<body>
+    <h1 id="title">Tic Tae Toe</h1>
+<!--     <script>
+        (function(){
+            var background = new Audio("background.webm")
+            background.play()
+        }());
+    </script> -->
+    <div class="buttons">
+        <button id="play"><a href="game.html"><img src="play.jpg" alt="Play Button"></a></button>       <!-- Play button which when clicked will take to my game page -->
+        <button id="playBtn"><img id="instructions" src="instructions.png" alt="instructions"></button>
+    </div>
+    <!-- Instructions on how to play my game -->
+    <section id="manual">
+        <h1>How To play</h1>
+        <h2>There will be 3 rounds  for one game and who ever wins more round will win the game</h2>
+        <h2>Winning each round</h2>
+        <p>
+            <ul>
+                <li>Each player can take turn in clicking on the boxes as per their wish</li>
+                <li>Each time you click on the box, the board will be updated with the current player's name if the box is not clicked before</li>
+                <li>But if the box is already clicked, it will remove the player's name and make it empty where you can click and update your name</li>
+                <li>If player "X" is able to fill "X" in three consecutive boxes vertically or horizontally or diagonally, player "X" will win that round</li>
+            </ul>
+        </p>
+        <p># If no one is able to win, ther will be a tie breaking round!</p>
+        <h2>Tie Breaking Round</h2>
+        <p>
+            <ul>
+                <li>If no one wins in the 3 rounds, there will be fourth round for tie breaking.</li>
+                <li> Who ever wins the tie breaking round will win the game </li>
+                <li>If no one wins the tie breaking round also, the game will be a draw. Players can play again</li>
+            </ul>
+        </p>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

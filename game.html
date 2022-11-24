@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       <!-- links for icons and fonts -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+</head>
+<body>
+    <main class="background">
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <h2 id="tie-round"></h2>        <!-- will show message when it is a tie -->
+        <section class="display">               <!-- will display turns of the player -->
+            Player <span class="display-player playerX">X</span>'s turn
+        </section>
+        <section class="final-winner">          <!-- will declare final winner -->
+            <h1 id="final-winner"></h1>
+        </section>
+        <section class="score">                 <!-- show round number, Number of round won by each player -->
+            <h2>Round:<span id="roundNo">1</Round:span></h2>
+            <h1>Win</h1>
+            <h2 class="playerx">Player X:<span id="scoreX">0</span></h2>
+            <h2 class="playero">Player O: <span id="scoreO">0</span></h2>
+            <button class="btn" id="setting"><i class="fa fa-bars"></i></button>    <!-- More button -->
+        </section>
+        <section class="container">                 <!-- game area where players can click on  -->
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="strike"></div>      <!-- div declared to make a line when a player wins. This will be done using JavaScript -->
+        </section>
+        <section class="more">      <!-- More button from where users can come back to home page, mute game's background music -->
+            <h2>Setting</h2>        
+            <a href="index.html"><button class="btn" id="home"><i class="fa fa-home"></i></button></a>
+            <button class="btn volume-up" id="volume"><i class='fas fa-volume-up'></i></button>
+            <button class="btn volume-mute" id="volume"><i class="fas fa-volume-mute"></i></button>
+            <button class="btn" id="close"><i class="fa fa-close"></i></button>
+        </section>
+        <section class="display announcer hide"></section>      <!-- Announce the current round's winner -->
+        <section class="controls">                               <!-- buttons to restart, play again and goto next round -->
+            <button id="reset">Restart</button>
+            <button id="next-round">Next Round</button>
+            <button id="play-again">Play Again</button>
+        </section>
+    </main>
+</body>
+</html>

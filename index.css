@@ -1,0 +1,71 @@
+/* CSS style for home page */
+body{
+    background-color: #5f746b;
+    background-image:url(cover.png);
+    background-repeat: no-repeat;
+    background-position:260px -100px;
+    background-size: 1000px;
+}
+#title{
+    color:goldenrod;
+    margin-left: 500px;
+    font-size:95px;
+    margin-top:0px;
+}
+/* styling play button and images inside play button */
+#play{
+    background-color:#5f746b;
+    border:none;
+}
+#play img{
+    width:195px;
+    height:15vh;
+    margin-top:155px;
+    margin-bottom:45px;
+    border-radius: 10px;
+}
+#playBtn{
+    display:block;
+    background-color: #5f746b;
+    border:none;
+}
+/* styling instruction button and images inside instruction button */
+#instructions{
+    margin-top:25px;
+    width:200px;
+    height:15vh;
+    border-radius: 10px;
+}
+#instructions:hover{
+    opacity:0.7;
+}
+#play img:hover{
+    opacity:0.7;
+}
+/* styling instructions which will be hidden at first and shown only when clicked on how to play  */
+#manual{
+    background-color:rgb(36, 35, 37);
+    padding:10px;
+    width:80%;
+    position:absolute;
+    top:20%;
+    left:10%;
+    display:none;
+}
+#manual h1{
+    font-size:36px;
+    color:chartreuse;
+    text-align: center;
+}
+#manual h2{
+    font-size:25px;
+    color:darkgoldenrod;
+}
+#manual p{
+    font-size:28px;
+    color:chocolate;
+}
+#manual li{
+    font-size:18px;
+    color:darkcyan;
+}
