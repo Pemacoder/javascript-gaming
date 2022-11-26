@@ -78,13 +78,6 @@
     position:relative;
   
 } 
-
-.playerX{
-    color:#09c372;      /* style the player name's color when it's their turn */
-} 
-.playerO{
-    color:#498AFB;
-}
 .tile{
     border:1px solid rgb(138, 27, 27);
     min-width:100px;
@@ -195,10 +188,10 @@
     background-color:#FF0000;
 }
 /* setting color for each player's name */
+.playerX{
+    color:#09c372;       
+} 
 .playerO{
     color:#498AFB;
-}
-.playerX{
-    color:#09c372;  
-}
+} 
 
